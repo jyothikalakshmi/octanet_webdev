@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>health hub</title>
+</head>
+<body>
+    <div class="header-section">
+    <img clas="logo" src="logo2.jpeg" alt="logo">
+    <h1>HEALTH HUB</h1>
+    </div>
+    <div class="main-section">
+        <div class="img-container1">
+            <img class="img1" src="yoga.webp" alt="yoga">
+            <img class="img2" src="gym.jpg" alt="gym">
+        </div>
+        <p class="text"> health is wealth <br> Health is not valued until sickness comes.</p>
+        <div class="img-container2">
+            <img class="img3" src="med2.jpeg" alt="meditation">
+            <img class="img4" src="healthy-food.webp" alt="food">
+        </div>
+    </div>
+    <div class="last-section">
+        <div class="subscribe">
+            <p> want to join us..<br></p>
+            <button  class="submit-b" onclick="msg()"> subscribe</button>
+            <p> for more details, contact us <br> 9988776655</p>
+        </div>
+        <div class="info">
+            <p style="font-weight:bold;"> what we provide? </p>
+               <p> we do cover all aspects needed for good health.<br> we do exercises, meditation, and also do gym workouts to be fit,
+                also we guide about proper nutritious food and make sure our customers follow balanced diet.
+            </p>
+        </div>
+        <div class="success">
+            <p style="font-weight:bold"> success stories of some of our customers</p>
+               <p> rama. she is very healthy right now because of these practices.<br>
+                gana. he is very fit due to regular gym workouts<br>
+                many people have lost weight and are now happy.<br>
+                people who join us will be healthy both physically and mentally
+            </p>
+        </div>
+    </div>
+    <style>
+        .header-section{
+            display:flex;
+            align-items: center;
+            justify-content:center;
+            background-color: darkseagreen;
+            
+        }
+        .header-section h1{
+            /* align-items:center; */
+            text-align: center;
+            /* justify-content: center; */
+            font-size:6em;
+        }
+        
+        .main-section{
+            display:flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+            width:100%;
+            background-color:aliceblue;
+        }
+        .main-section .img-container1{
+            display:flex;
+            justify-content: space-between;
+            align-items:center;
+            width:100%;
+            margin-top:2em;
+        }
+        .main-section .img-container1 .img1{
+            height:500px;
+            margin-right:80%;
+        }
+        .main-section .img-container1 .img2{
+            height:500px;
+            margin-left:-70%;
+        }
+        .main-section .text{
+            margin-top:20px;
+            align-items:center;
+            font-size:4em;
+        }
+        .main-section .img-container2{
+            display:flex;
+            justify-content:space-between;
+            align-items: center;
+            margin-top:2em;
+        }
+        .main-section .img-container2 .img3{
+            height:500px;
+            margin-right:80%;
+        }
+        .main-section .img-container2 .img4{
+            height:500px;
+            margin-left: -70%;
+        }
+        .last-section{
+            display:flex;
+            justify-content: center;
+            align-items:center;
+            flex-direction:row;
+            height:100hv;
+            margin-top:30px;
+            background-color:thistle;
+        }
+        .last-section .subscribe{
+            flex:1;
+            font-size:2em;
+            margin-left:20px;
+            border-right:2px solid black;
+        }
+        .last-section .subscribe .submit-b{
+            border: 1px solid black;
+            border-radius:15px;
+            height:6em;
+            width:10em;
+            font-size:x-large;
+            text-align:center;
+        }
+        .last-section .info{
+            flex:1;
+            font-size:2em;
+            align-items:center;
+            border-right: 2px solid black;
+            padding:0 20px;
+            
+        }
+         .last-section .success{
+         flex:1;
+         font-size:2em;
+         padding:0 20px;
+
+         }
+    </style>
+
+    <!-- alert message on clicking upon subscribe button -->
+    <script>
+        function msg(){
+            alert("your subscription to health hub is successful");
+        }
+    </script>
+</body>
+</html>
